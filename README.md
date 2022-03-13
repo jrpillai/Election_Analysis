@@ -5,8 +5,8 @@ In this election audit, we use a python script to determine and report the total
 * A total of 369, 711 votes were cast in this congressional election.
 Using a `for` loop to examine each row in the csv file, we counted the total votes using the following code:
 
-`# Add to the total vote count
-total_votes = total_votes + 1`
+    `# Add to the total vote count
+    total_votes = total_votes + 1`
 
 * There are three counties in this congressional district: Jefferson, Denver and Arapahoe. Denver County had the highest turnout by far, with 306,055 votes and 82.8% of all the votes. Arapahoe County had the fewest votes, with 24,801 votes and 6.7% of the votes. Jefferson County had a slightly higher turnout, with 38,855 votes and 10.5% of the votes.
 Using a `for` loop to examine each row in the csv file, we collected the the names of the counties in a list and tallied their votes using the following code 
