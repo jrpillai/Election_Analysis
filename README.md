@@ -57,6 +57,6 @@ In this election audit, we use a python script to determine and report the total
 
 ## Election Audit Summary
 This python script quickly and successfully tallies votes across multiple dimensions (candidate, counties), provides an overview of the vote distribution, and determines a winner. Because it determines the list of candidates and counties from the vote data itself, it can easily be generalized to any election where the voting data is stores as a csv file. Here are some possible useful modifications we could make for other types of elections:
-* For a more complex election for multiple positions (city council, mayor, and representative), we might use a nested for loop to separate out the votes for each race. As long as a field in the csv codes for which race the vote is for, we can still easily generalize our code.
-* If a vote requires an absolute majority (50% + 1) or qualified majority (defined percentage), we can add a conditional statement to ensure a winning candidate or proposition is reported to have not won or passed if they do not meet the specified requirements. 
+* For a more complex election for multiple positions (city council, mayor, and representative), we might use a nested for loop to separate out the votes for each race. If a field in the csv distinguishes the specific race, we can easily generalize our code. 
+* If a vote requires an absolute majority (50% + 1) or qualified majority (defined percentage), we can add a conditional statement to ensure that a candidate or proposition is only reported as having won if they meet those requirements. 
 
